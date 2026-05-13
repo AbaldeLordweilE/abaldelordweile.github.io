@@ -477,6 +477,31 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__intro {
+    margin-bottom: var(--gutter-large);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    max-width: 34rem;
+    line-height: 1.8;
+}
+
+.work__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin: 0 0 var(--gutter-normal) 0;
+}
+
+.work__skill {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    color: var(--text-dark);
+    font-size: .85rem;
+    padding: .55rem .9rem;
+    font-weight: 600;
+}
+
 .work__code {
     display: block;
     height: 3rem;
@@ -511,23 +536,48 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-large);
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+.client__logo-card {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-normal);
+    min-width: 12rem;
+    padding: 1.1rem 1.2rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.25rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.client__logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(103, 117, 255, 0.95), rgba(37, 163, 255, 0.95));
+    color: white;
+    font-weight: 800;
+    letter-spacing: .04em;
+}
+
+.client__logo-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.98rem;
+    font-weight: 600;
 }
 
 @media(max-width: 1240px) {
     .client__logos {
-        overflow-x: scroll;
+        justify-content: flex-start;
+        overflow-x: auto;
         padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
     }
 }
 
