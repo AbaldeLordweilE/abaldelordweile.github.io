@@ -537,42 +537,45 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gutter-large);
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .client__logo-card {
     display: flex;
     align-items: center;
-    gap: var(--gutter-normal);
-    min-width: 12rem;
-    padding: 1.1rem 1.2rem;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 1.25rem;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    gap: .9rem;
+    flex: 1 1 16rem;
+    min-width: 11rem;
+    padding: 1rem 1.1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 1.2rem;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
     text-decoration: none;
     color: inherit;
-    transition: transform .3s ease, border-color .3s ease, background .3s ease;
+    transition: transform .25s ease, border-color .25s ease, background .25s ease, box-shadow .25s ease;
 }
 
 .client__logo-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     border-color: rgba(255, 255, 255, 0.22);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.12);
 }
 
 .client__logo-mark {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 1rem;
-    background: linear-gradient(135deg, rgba(103, 117, 255, 0.95), rgba(37, 163, 255, 0.95));
-    color: white;
+    background: linear-gradient(135deg, #252525, #444444);
+    color: #f8f8f8;
     font-weight: 800;
-    letter-spacing: .04em;
+    letter-spacing: .05em;
 }
 
 .client__logo-card p {
