@@ -551,6 +551,15 @@ body:not(.user-is-tabbing) a:focus {
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 1.25rem;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform .3s ease, border-color .3s ease, background .3s ease;
+}
+
+.client__logo-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .client__logo-mark {
